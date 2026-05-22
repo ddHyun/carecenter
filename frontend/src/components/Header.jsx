@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Header() {
     return (
         <header className="header">
-            <div className="logo">CARE CENTER</div>
+            <Link to="/" className="logo">CARE CENTER</Link>
 
             <nav>
                 <Link to="/about">소개</Link>

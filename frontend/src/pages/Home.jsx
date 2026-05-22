@@ -5,6 +5,8 @@ import About from '../components/About'
 import Program from '../components/Program'
 import Facility from '../components/Facility'
 
+import '../styles/home.css'
+
 // 뼈대
 export default function Home(){
     return (

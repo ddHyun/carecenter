@@ -1,0 +1,28 @@
+.program-page {
+  padding: 120px 80px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 40px;
+}
+
+.program-box {
+  padding: 48px;
+
+  border-radius: 32px;
+
+  background: #f7f7f7;
+}
+
+.program-box h3 {
+  font-size: 32px;
+
+  margin-bottom: 20px;
+}
+
+.program-box p {
+  color: #666;
+
+  line-height: 1.8;
+}
