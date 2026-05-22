@@ -14,8 +14,8 @@ export default function FacilityPage(){
             <Header />
 
             <section className="sub-hero">
-                <div className="sub-hero-content">
-                    <p>HOME · 시설</p>
+                <div className="sub-hero-inner">
+                    <p className="breadcrumb">HOME · 시설</p>
                     <h1>시설</h1>
                 </div>
             </section>

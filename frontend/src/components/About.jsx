@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import about1 from '../assets/images/about1.jpg'
 import about2 from '../assets/images/about2.jpg'
 
@@ -19,7 +21,9 @@ export default function About() {
           경험할 수 있도록 지원합니다
         </p>
 
-        <button>더보기</button>
+        <Link to="/about" className="more-info">
+          <button>더보기</button>
+        </Link>
       </div>
 
       <div className="about-images">

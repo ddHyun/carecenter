@@ -11,6 +11,10 @@ body,
   min-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 320px;
   font-family: system-ui, sans-serif;
@@ -27,6 +31,7 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .layout {
@@ -90,11 +95,12 @@ nav a {
   position: relative;
 
   width: 100%;
-  height: 260px;
+  height: 320px;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+
+  padding: 0 80px 60px;
 
   overflow: hidden;
 }
@@ -111,8 +117,28 @@ nav a {
 
   background-size: cover;
   background-position: center;
+}
 
-  transform: scale(1.05);
+.sub-hero-inner {
+  position: relative;
+  z-index: 2;
+
+  color: white;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+
+  opacity: 0.8;
+
+  letter-spacing: 1px;
+}
+
+.sub-hero-inner h1 {
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1;
 }
 
 .sub-hero h1 {
@@ -136,21 +162,37 @@ nav a {
   margin-bottom: 16px;
 }
 
-.sub-hero-content {
-  position: relative;
-  z-index: 2;
+@media (max-width: 1024px) {
 
-  text-align: center;
+  .about,
+  .facility,
+  .contact-page,
+  .about-intro {
+    flex-direction: column;
+  }
 
-  color: white;
-}
+  .program-grid,
+  .facility-grid,
+  .about-gallery {
+    grid-template-columns: 1fr;
+  }
 
-.sub-hero-content p {
-  margin-bottom: 12px;
+  .hero {
+    justify-content: center;
 
-  font-size: 14px;
+    padding: 0 24px;
+  }
 
-  opacity: 0.8;
+  .hero-content {
+    text-align: center;
+  }
 
-  letter-spacing: 2px;
+  .facility-gallery {
+    flex-direction: column;
+  }
+
+  .facility-large,
+  .facility-small-group {
+    width: 100%;
+  }
 }

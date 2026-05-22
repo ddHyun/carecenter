@@ -13,8 +13,8 @@ export default function AboutPage(){
             <Header />
 
             <section className="sub-hero">
-                <div className="sub-hero-content">
-                    <p>HOME · 소개</p>
+                <div className="sub-hero-inner">
+                    <p className="breadcrumb">HOME · 소개</p>
                     <h1>소개</h1>
                 </div>
             </section>

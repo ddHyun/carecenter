@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import facility1 from '../assets/images/facility1.jpg'
 import facility2 from '../assets/images/facility2.jpg'
 import facility3 from '../assets/images/facility3.jpg'
@@ -19,6 +21,10 @@ export default function Facility() {
           다양한 활동과 일상을 경험할 수 있도록
           쾌적한 공간을 제공합니다
         </p>
+
+        <Link to="/facility" className="more-info">
+          <button>더보기</button>
+        </Link>
       </div>
 
       <div className="facility-gallery">

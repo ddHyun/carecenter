@@ -5,10 +5,14 @@ import AboutPage from './pages/AboutPage'
 import ProgramPage from './pages/ProgramPage'
 import FacilityPage from './pages/FacilityPage'
 import ContactPage from './pages/ContactPage'
+import ScrollToTop from './components/ScrollToTop'
 
 function App(){
   return (
     <BrowserRouter>
+    
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
