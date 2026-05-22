@@ -1,9 +1,0 @@
-.hero {
-  height: 80vh;
-  background: url('/hero.jpg') center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
